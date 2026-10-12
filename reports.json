@@ -1,0 +1,2695 @@
+{
+  "title": "追光者 · 26题科学图解",
+  "created": "2026-10-12",
+  "snapshot_file_mtime": "2026-10-12T01:11:24+08:00",
+  "score_note": "本地最高分快照，非实时榜单；文件修改时间不等于平台出分时间。身份题不计入26题总分。",
+  "source_doc": "https://feishu.doubao.com/docx/SWCNdaZMWoEZ0MxTMbZcQIohnQh",
+  "analogy_source": "本地参赛简历的植物多维基因组学、WDL/Nextflow、SciFusion 教育测评经历；类比只帮助理解，不作为新科学证据。",
+  "reports": [
+    {
+      "n": 1,
+      "title": "简历与身份绑定",
+      "brief": true,
+      "hook": "简历身份绑定已完成。",
+      "score": 100,
+      "history": [
+        {
+          "index": 1,
+          "attempt": "50858",
+          "submitted": "10-10 19:18:56",
+          "graded": "10-10 19:55:05",
+          "score": 100.0,
+          "state": "已出分"
+        }
+      ],
+      "figures": [],
+      "sources": []
+    },
+    {
+      "n": 2,
+      "title": "DeepMD/DPA4 基础",
+      "hook": "让 AI 给原子算受力，再检查这部原子电影是否可信。",
+      "background": "分子动力学把原子位置交给势能模型，由能量对坐标的导数得到力，再推进下一时刻。步长越大通常越省计算，但积分误差也可能增大。",
+      "methods": "固定 DPA4-Mini，计算周期硅晶体的能量和力；检查对称性与有限差分；对比 1 fs 与 2 fs 的短程轨迹。",
+      "results": "本次从 work-v2 原始轨迹重画能量漂移和原子位置。文件记录的最大漂移为 6.076×10⁻⁶ 与 2.391×10⁻⁵ eV/atom；2 fs 约为 1 fs 的 3.94 倍。结论仅适用于这段短轨迹。",
+      "pitfalls": "短时守恒不等于势能模型在所有材料上准确。相同初态、物理时长和单位是比较步长的前提。第一轮 52.65 分，补齐实际执行证据后得到 100 分。",
+      "analogy": "像你验证基因组分析流水线：先确认软件真的运行，再看输出指标是否满足生物学和数值上的自洽；流水线跑通与结论正确要分开检查。",
+      "limits": "评分变化与过程证据补全一致，但仅凭两次提交不能拆出每个证据项的独立因果贡献。",
+      "flow": [
+        "固定模型与初态",
+        "计算能量和力",
+        "检查物理一致性",
+        "对比时间步长"
+      ],
+      "score": 100.0,
+      "cid": "ai4s-deepmd-dpa4-2fde8de2",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "51019",
+          "submitted": "10-10 20:54:30",
+          "graded": "10-10 21:20:42",
+          "score": 52.65,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "51134",
+          "submitted": "10-10 21:26:25",
+          "graded": "10-10 21:41:53",
+          "score": 100.0,
+          "state": "已出分"
+        }
+      ],
+      "figures": [
+        {
+          "file": "02-energy.png",
+          "svg": "02-energy.svg",
+          "caption": "真实计算｜work-v2 的完整保存帧；以每原子总能量相对初态的变化比较步长，没有添加平滑或误差条。",
+          "sources": [
+            "赛题/00-共同必做题/ai4s-deepmd-dpa4-2fde8de2/work-v2/outputs/md-dt1.json",
+            "赛题/00-共同必做题/ai4s-deepmd-dpa4-2fde8de2/work-v2/outputs/md-dt2.json"
+          ]
+        },
+        {
+          "file": "02-atoms.png",
+          "svg": "02-atoms.svg",
+          "caption": "真实坐标｜64 个硅原子的初态与末态；坐标未放大位移。网页可播放保存帧，画面不代表额外计算。",
+          "sources": [
+            "赛题/00-共同必做题/ai4s-deepmd-dpa4-2fde8de2/work-v2/outputs/md-dt1.json"
+          ]
+        },
+        {
+          "file": "02-flow.png",
+          "svg": "02-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "02-scores.png",
+          "svg": "02-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/00-共同必做题/ai4s-deepmd-dpa4-2fde8de2/work-v2/outputs/md-dt1.json",
+        "赛题/00-共同必做题/ai4s-deepmd-dpa4-2fde8de2/work-v2/outputs/md-dt2.json"
+      ],
+      "references": [
+        [
+          "DeePMD 势能与力",
+          "https://docs.deepmodeling.org/projects/deepmd/en/latest/model/train-energy.html"
+        ]
+      ]
+    },
+    {
+      "n": 3,
+      "title": "Cu(111)-水界面热导",
+      "hook": "热量通过铜和水的接触面时，究竟有多难？",
+      "background": "界面两侧的温度可能出现跳变。给定单位面积热流 J，界面热导 G=J/ΔT；温差的估计方式会直接改变结论。",
+      "methods": "建立 Cu(111)-水体系并计算热流和温度剖面。逐包复核发现：早期 attempt 54540 使用加权拟合；final2 已有 1201 条逐配置预测且测试 ID 完全匹配；final3 又修复力 RMSE 汇总并通过无权 OLS 复算。",
+      "results": "历史包热导与要求的 OLS 最大相差 14.71%；final3 同样观测量的最大相对误差降到 9.94×10⁻¹⁵。final3 的六个界面热导约为 105–262 MW·m⁻²·K⁻¹，分布差异仍需检查稳态和统计误差。",
+      "pitfalls": "按原子数加权回归与按空间分箱等权回归回答的统计问题不同。逐配置预测不能用家族均值替代；单位、面积和稳态窗口也要固定。",
+      "analogy": "这很像单细胞分析中按细胞数汇总与按生物学样本汇总：权重一换，估计对象就变了。这里只类比统计权重，不把原子当成独立生物学重复。",
+      "limits": "2026-10-12 01:42 平台快照：六笔均为待人工评审，明确说明自动评分暂不可用，尚无最终分。历史契约缺陷已在后续版本修正；不能断言六次全因格式失败，也不能仅凭量级合理认定物理正确。“全场没做出来”和“投入性价比低”需要最终榜、实际耗时及可替代收益支持。",
+      "flow": [
+        "建模与验证势能",
+        "施加热流",
+        "拟合温度分布",
+        "按契约复算热导"
+      ],
+      "score": null,
+      "cid": "interfacial-thermal-conductance-of-a-bounded-cu-11-36aa254d",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "54262",
+          "submitted": "10-11 14:20:14",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 2,
+          "attempt": "54540",
+          "submitted": "10-11 15:46:25",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 3,
+          "attempt": "54869",
+          "submitted": "10-11 17:18:25",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 4,
+          "attempt": "54894",
+          "submitted": "10-11 17:23:58",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 5,
+          "attempt": "54922",
+          "submitted": "10-11 17:28:24",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 6,
+          "attempt": "54942",
+          "submitted": "10-11 17:33:12",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        }
+      ],
+      "figures": [
+        {
+          "file": "03-ols.png",
+          "svg": "03-ols.svg",
+          "caption": "历史包审计｜attempt 54540 对应包的三个复本、上下界面；六根柱组不是六个独立实验。最大相对偏差 14.71%，不据此推断远程失败原因。",
+          "sources": [
+            "codex-deepseek-review/itc-D3-ols-audit.json"
+          ]
+        },
+        {
+          "file": "03-final3.png",
+          "svg": "03-final3.svg",
+          "caption": "后续修复包｜各观测量复算相对误差≤9.94×10⁻¹⁵；上下界面属于同一复本，不视为独立重复。本图无误差条，不宣称稳态或收敛已证实。",
+          "sources": [
+            "codex-deepseek-review/itc-itc-final3-arm-READY-ols-audit.json"
+          ]
+        },
+        {
+          "file": "03-flow.png",
+          "svg": "03-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "03-scores.png",
+          "svg": "03-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "逐题科学报告/review-status-snapshot.json",
+        "codex-deepseek-review/itc-final2-granularity-audit.json",
+        "codex-deepseek-review/itc-final3-force-audit.json",
+        "codex-deepseek-review/itc-D3-ols-audit.json",
+        "codex-deepseek-review/itc-itc-final3-arm-READY-ols-audit.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 4,
+      "title": "受挫塑性代理逆向设计",
+      "hook": "怎样排列微结构，才能既承受应力又保留变形能力？",
+      "background": "题目用合成代理模型描述两种局部变体及其耦合。逆向设计从想要的性能出发，搜索满足约束的微结构。",
+      "methods": "进行约 816 秒的并行搜索，检查名义性能、公开扰动场景和硬约束，输出统一设计与观测量。",
+      "results": "公开输出的 nominal merit 为 1.0；两个公开扰动场景约为 0.8009 与 0.7961。图中同时显示名义与扰动表现，避免只展示最好工况。",
+      "pitfalls": "名义最优不代表抗扰动；代理模型给出的应力和应变也不能当成真实材料实验值。",
+      "analogy": "可类比植物性状选择：某环境里的高表现与跨环境稳定性是不同目标。模型场景与真实种植环境之间仍需验证。",
+      "limits": "本题高分说明在题设模型和评审口径下表现好，尚未建立真实材料的实验外推。",
+      "flow": [
+        "定义微结构",
+        "搜索候选",
+        "检查硬约束",
+        "比较扰动性能"
+      ],
+      "score": 100.0,
+      "cid": "robust-inverse-design-of-a-frustrated-plasticity-s-322265bf",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "51897",
+          "submitted": "10-11 00:10:38",
+          "graded": "10-11 00:44:22",
+          "score": 34.6804,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "52076",
+          "submitted": "10-11 00:56:51",
+          "graded": "10-11 01:35:43",
+          "score": 100.0,
+          "state": "已出分"
+        }
+      ],
+      "figures": [
+        {
+          "file": "04-robustness.png",
+          "svg": "04-robustness.svg",
+          "caption": "题设代理模型输出｜名义 merit=1，公开扰动约为 0.80；不代表真实材料实验测量。",
+          "sources": [
+            "赛题/09-材料科研CPU/robust-inverse-design-of-a-frustrated-plasticity-s-322265bf/outputs/observables.json"
+          ]
+        },
+        {
+          "file": "04-flow.png",
+          "svg": "04-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "04-scores.png",
+          "svg": "04-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/09-材料科研CPU/robust-inverse-design-of-a-frustrated-plasticity-s-322265bf/STATUS.json",
+        "赛题/09-材料科研CPU/robust-inverse-design-of-a-frustrated-plasticity-s-322265bf/outputs/observables.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 5,
+      "title": "Pt/Au 面缺陷拓扑与 ORR",
+      "hook": "金属表面缺几个原子，会让催化更好还是更不稳定？",
+      "background": "缺陷会改变表面原子的邻接环境，从而改变题设模型的活性与表面能。两项指标存在权衡。",
+      "methods": "把 Pt/Au 表面转为周期原子图，比较晶面、缺陷模式及两种活性映射，产生 48 个表面汇总与位点数据。",
+      "results": "结果图按 JL/CV 映射分开展示表面能与模型电流。部分缺陷在一种映射下活性高，在另一种映射下显著降低，结论依赖代理关系。",
+      "pitfalls": "周期边界的邻居计算、空位分母、位点到整体的汇总都可能造成系统误差。不同活性模型不能混在一条趋势线中。",
+      "analogy": "像在基因共表达网络里研究局部连接结构与功能的联系。邻接图是结构表示，功能预测仍依赖下游模型，不能仅凭连接度断定机制。",
+      "limits": "这里的电流是题设模型计算值，不是电化学实测。Pareto 比较必须在相同模型和分组内解释。",
+      "flow": [
+        "构建周期图",
+        "枚举缺陷",
+        "计算稳定性与活性",
+        "识别性能权衡"
+      ],
+      "score": 100.0,
+      "cid": "defect-topology-stability-and-orr-activity-of-pt-a-fcde8365",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "52004",
+          "submitted": "10-11 00:39:43",
+          "graded": "10-11 01:11:07",
+          "score": 69.0,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "52262",
+          "submitted": "10-11 01:36:49",
+          "graded": "—",
+          "score": null,
+          "state": "rejected"
+        },
+        {
+          "index": 3,
+          "attempt": "52483",
+          "submitted": "10-11 02:38:28",
+          "graded": "10-11 03:10:18",
+          "score": 69.4,
+          "state": "已出分"
+        },
+        {
+          "index": 4,
+          "attempt": "52642",
+          "submitted": "10-11 03:21:05",
+          "graded": "10-11 04:06:08",
+          "score": 69.0,
+          "state": "已出分"
+        },
+        {
+          "index": 5,
+          "attempt": "53498",
+          "submitted": "10-11 09:57:08",
+          "graded": "10-11 13:44:45",
+          "score": 100.0,
+          "state": "已出分"
+        }
+      ],
+      "figures": [
+        {
+          "file": "05-activity.png",
+          "svg": "05-activity.svg",
+          "caption": "48 行真实代理结果｜Pt 与 Au 分别建模，不是 Pt/Au 合金；不同火山关系分开展示。没有新做 DFT。",
+          "sources": [
+            "赛题/独立求解/orr-clean-source/outputs/facet_summary.csv"
+          ]
+        },
+        {
+          "file": "05-flow.png",
+          "svg": "05-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "05-scores.png",
+          "svg": "05-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/10-新增材料CPU/defect-topology-stability-and-orr-activity-of-pt-a-fcde8365/STATUS.json",
+        "赛题/独立求解/orr-clean-source/outputs/facet_summary.csv"
+      ],
+      "references": []
+    },
+    {
+      "n": 6,
+      "title": "联合缺陷域逆向设计",
+      "hook": "一个器件有四类薄弱环节，怎样避免只修好其中一个？",
+      "background": "离子输运、磁保持、迟滞和循环损伤受共同设计影响。降低总体最差损失，可能让原本较好的某类缺陷变差。",
+      "methods": "先做整体鲁棒搜索，再将缺陷族逐个展开评估；第 16 轮对各族增加上限，比较 incumbent、S6、S1、V3、V4。",
+      "results": "审计撤回了“所有轴都改善”的早期说法：S6 的公开 worst64 反而恶化 0.438%；V3 四族都改善，但 H0 增加约 5.237%。这是有代价的改进。",
+      "pitfalls": "总体分数会掩盖分组退步。“平均更好”“最坏更好”“所有指标更好”是三个不同命题。",
+      "analogy": "与你做跨物种或跨学生群体评价相似：总平均提高不代表每个物种、每个能力群体都获益。需查看分层结果。",
+      "limits": "目前证据支持目标之间的权衡，不支持无条件支配；隐藏评审分数与公开目标的关系还不能完全拆解。",
+      "flow": [
+        "统一设计",
+        "逐族评估",
+        "添加分族约束",
+        "对照收益与代价"
+      ],
+      "score": 34.28,
+      "cid": "joint-defect-domain-protocol-inverse-design-on-an-4bd8d4ce",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "52028",
+          "submitted": "10-11 00:45:25",
+          "graded": "10-11 01:19:49",
+          "score": 34.1592,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "53559",
+          "submitted": "10-11 10:36:07",
+          "graded": "10-11 13:51:28",
+          "score": 34.2797,
+          "state": "已出分"
+        },
+        {
+          "index": 3,
+          "attempt": "54040",
+          "submitted": "10-11 12:48:20",
+          "graded": "10-11 20:49:15",
+          "score": 33.2912,
+          "state": "已出分"
+        },
+        {
+          "index": 4,
+          "attempt": "54044",
+          "submitted": "10-11 12:48:45",
+          "graded": "10-11 18:09:02",
+          "score": 23.4129,
+          "state": "已出分"
+        },
+        {
+          "index": 5,
+          "attempt": "54727",
+          "submitted": "10-11 16:40:16",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        }
+      ],
+      "figures": [
+        {
+          "file": "06-families.png",
+          "svg": "06-families.svg",
+          "caption": "真实审计数据｜各族包络角点损失对照；只显示族指标，不掩盖 H0 等其他目标上的代价。",
+          "sources": [
+            "赛题/09-材料科研CPU/joint-defect-domain-protocol-inverse-design-on-an-4bd8d4ce/evidence/agent-run-20261011T021159Z/round16-evaluation.json"
+          ]
+        },
+        {
+          "file": "06-flow.png",
+          "svg": "06-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "06-scores.png",
+          "svg": "06-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/09-材料科研CPU/joint-defect-domain-protocol-inverse-design-on-an-4bd8d4ce/AGENT-REPORT.md",
+        "赛题/09-材料科研CPU/joint-defect-domain-protocol-inverse-design-on-an-4bd8d4ce/AGENT-REPORT-dsh-verify.md",
+        "赛题/09-材料科研CPU/joint-defect-domain-protocol-inverse-design-on-an-4bd8d4ce/STATUS.json",
+        "赛题/09-材料科研CPU/joint-defect-domain-protocol-inverse-design-on-an-4bd8d4ce/evidence/agent-run-20261011T021159Z/round16-evaluation.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 7,
+      "title": "声子谐振网络",
+      "hook": "复杂网络搜索，有时可以被一个结构条件直接解决。",
+      "background": "题目让二元图案与连续处理变量共同调节谐振网络。早期用数值搜索，后期发现能消除模型中散射项的结构。",
+      "methods": "从谱方法和局部搜索迭代到 W=0 设计；独立证书检查 120 个二元库存、192 个 motif、连续场约束和目标下界。",
+      "results": "证书中每个 motif 满足 |q|=3，使所建模的散射项为零；提交目标与证明下界差约 1.91×10⁻¹⁷。较晚成绩快照记录 100 分。",
+      "pitfalls": "浮点接近下界与精确可行性需要分别证明。公开模型最优也不能替代预算合规、运行环境和过程证据。",
+      "analogy": "类似在基因组算法里先发现图结构或不变量，再缩小搜索空间；比一味增加参数搜索更有价值。",
+      "limits": "这是公开代理模型内的最优性证据。零散射解可能使原本的复杂鲁棒优化退化，属于值得讨论的题目设计边界，不自动构成评分错误。",
+      "flow": [
+        "搜索二元图案",
+        "识别零散射条件",
+        "解连续场",
+        "验证下界与可行性"
+      ],
+      "score": 100.0,
+      "cid": "robust-ordering-and-processing-of-a-coupled-phonon-3a39a214",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "52051",
+          "submitted": "10-11 00:50:47",
+          "graded": "10-11 01:28:43",
+          "score": 17.6641,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "52250",
+          "submitted": "10-11 01:33:21",
+          "graded": "10-11 02:16:17",
+          "score": 17.6641,
+          "state": "已出分"
+        },
+        {
+          "index": 3,
+          "attempt": "53500",
+          "submitted": "10-11 09:57:49",
+          "graded": "10-11 13:45:20",
+          "score": 14.5024,
+          "state": "已出分"
+        },
+        {
+          "index": 4,
+          "attempt": "53819",
+          "submitted": "10-11 11:34:40",
+          "graded": "10-11 15:17:45",
+          "score": 26.1165,
+          "state": "已出分"
+        },
+        {
+          "index": 5,
+          "attempt": "53864",
+          "submitted": "10-11 11:51:52",
+          "graded": "10-11 15:29:05",
+          "score": 26.4011,
+          "state": "已出分"
+        },
+        {
+          "index": 6,
+          "attempt": "53912",
+          "submitted": "10-11 12:09:28",
+          "graded": "10-11 16:36:04",
+          "score": 26.5803,
+          "state": "已出分"
+        },
+        {
+          "index": 7,
+          "attempt": "54074",
+          "submitted": "10-11 13:03:59",
+          "graded": "10-11 18:54:38",
+          "score": 27.2808,
+          "state": "已出分"
+        },
+        {
+          "index": 8,
+          "attempt": "54689",
+          "submitted": "10-11 16:30:05",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 9,
+          "attempt": "54758",
+          "submitted": "10-11 16:52:30",
+          "graded": "10-11 18:25:43",
+          "score": 49.65,
+          "state": "已出分"
+        },
+        {
+          "index": 10,
+          "attempt": "54787",
+          "submitted": "10-11 17:01:14",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 11,
+          "attempt": "54994",
+          "submitted": "10-11 17:44:25",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        }
+      ],
+      "figures": [
+        {
+          "file": "07-flow.png",
+          "svg": "07-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "07-scores.png",
+          "svg": "07-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/09-材料科研CPU/robust-ordering-and-processing-of-a-coupled-phonon-3a39a214/AGENT-REPORT.md",
+        "赛题/09-材料科研CPU/robust-ordering-and-processing-of-a-coupled-phonon-3a39a214/STATUS.json",
+        "codex-deepseek-review/phonon-W0-independent-certificate.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 8,
+      "title": "Kagome 弹性网络",
+      "hook": "沿两条路径操作同一系统，先后顺序为什么会改变结果？",
+      "background": "非阿贝尔在这里指变换不对易：先 A 后 B 与先 B 后 A 不同。Kagome 弹性网络用模式子空间的平行输运展示这种效应。",
+      "methods": "从作者代码存档恢复参数和环境，计算能带、对偶残差以及不同路径分辨率下的 Wilson 环。",
+      "results": "本地最终输出中，k=(2,1)、400 点路径的交换子迹为 −2.34005428；图解同时展示真实 AB/BA 模式概率和分辨率收敛。",
+      "pitfalls": "简并子空间不能逐个特征向量随意追踪；基底规范、矩阵乘法顺序和路径离散化都会影响结果。",
+      "analogy": "可借 PCA 理解“一个子空间能用不同基底表示”；但 PCA 本身并不等于非阿贝尔输运。网页用三维旋转说明顺序依赖，再连接真实计算量。",
+      "limits": "本地记录指出题面参数不完整。补参依据和自定选择需保留。另已核对 DOI：论文正式题名为 Dualities and non-Abelian mechanics，Nature 577, 636–640 (2020)，旧总结的题名和卷页需更正。",
+      "flow": [
+        "恢复作者参数",
+        "构建动力学矩阵",
+        "计算能带",
+        "验证路径顺序效应"
+      ],
+      "score": 64.76,
+      "cid": "non-abelian-mechanics-in-a-critical-kagome-elastic-b5018746",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "53431",
+          "submitted": "10-11 09:43:41",
+          "graded": "10-11 13:38:52",
+          "score": 64.7577,
+          "state": "已出分"
+        }
+      ],
+      "figures": [
+        {
+          "file": "08-bands.png",
+          "svg": "08-bands.svg",
+          "caption": "作者源模型复现｜每条线是一支振动频率；横轴为既有路径索引，未对数据重新拟合。",
+          "sources": [
+            "赛题/10-新增材料CPU/non-abelian-mechanics-in-a-critical-kagome-elastic-b5018746/final-outputs/band_structures.csv",
+            "赛题/10-新增材料CPU/non-abelian-mechanics-in-a-critical-kagome-elastic-b5018746/final-outputs/method.json"
+          ]
+        },
+        {
+          "file": "08-holonomy.png",
+          "svg": "08-holonomy.svg",
+          "caption": "真实计算｜k=(2,1)，概率图采用 400 点输出；收敛图保留 50、100、200、400 点，非零交换子体现不对易。",
+          "sources": [
+            "赛题/10-新增材料CPU/non-abelian-mechanics-in-a-critical-kagome-elastic-b5018746/final-outputs/nonabelian_holonomy.csv"
+          ]
+        },
+        {
+          "file": "08-flow.png",
+          "svg": "08-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "08-scores.png",
+          "svg": "08-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/10-新增材料CPU/non-abelian-mechanics-in-a-critical-kagome-elastic-b5018746/AGENT-REPORT-KAGOME-kagome.md",
+        "赛题/10-新增材料CPU/non-abelian-mechanics-in-a-critical-kagome-elastic-b5018746/STATUS.json",
+        "赛题/10-新增材料CPU/non-abelian-mechanics-in-a-critical-kagome-elastic-b5018746/final-outputs/band_structures.csv",
+        "赛题/10-新增材料CPU/non-abelian-mechanics-in-a-critical-kagome-elastic-b5018746/final-outputs/method.json",
+        "赛题/10-新增材料CPU/non-abelian-mechanics-in-a-critical-kagome-elastic-b5018746/final-outputs/nonabelian_holonomy.csv"
+      ],
+      "references": [
+        [
+          "Dualities and non-Abelian mechanics",
+          "https://www.nature.com/articles/s41586-020-1932-6"
+        ]
+      ]
+    },
+    {
+      "n": 9,
+      "title": "SiC 纳米颗粒形貌",
+      "hook": "高温下，一颗纳米颗粒如何变形，表面原子如何移动？",
+      "background": "题目要求跟踪 8 nm SiC 颗粒的形貌变化与早期表面扩散。形状和扩散是不同观测量，需要分别定义。",
+      "methods": "已有输入缺失排查、CPU/GPU 吞吐预检与提交评分记录；本次未在已核查目录中找到足以重画完整形貌演化的原始坐标轨迹。",
+      "results": "历史得分约 4.968。此题提供过程图和成绩记录，不用示意原子动画冒充这次 SiC 结果。",
+      "pitfalls": "质心漂移和整体转动会污染位移；表面原子的选择规则、早晚时间窗与扩散拟合区间必须固定。",
+      "analogy": "类似你研究发育或处理前后样本：先明确比较的对象和时间窗，再讨论变化。单细胞伪时序不是真实 MD 时间，二者只能在组织分析流程上类比。",
+      "limits": "输入可得性与算力可执行性是可复现性问题；缺少原始轨迹时，无法独立判定形貌与扩散结论。",
+      "flow": [
+        "核对输入",
+        "估算运行成本",
+        "运行颗粒演化",
+        "分别统计形貌和位移"
+      ],
+      "score": 4.97,
+      "cid": "equilibrium-shape-and-surface-diffusion-of-sic-nan-98b26af7",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "52506",
+          "submitted": "10-11 02:44:27",
+          "graded": "10-11 03:16:55",
+          "score": 4.968,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "55041",
+          "submitted": "10-11 17:53:33",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        }
+      ],
+      "figures": [
+        {
+          "file": "09-flow.png",
+          "svg": "09-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "09-scores.png",
+          "svg": "09-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/10-新增材料CPU/equilibrium-shape-and-surface-diffusion-of-sic-nan-98b26af7/AGENT-REPORT-sic-recompute.md"
+      ],
+      "references": []
+    },
+    {
+      "n": 10,
+      "title": "稀有气体功率谱",
+      "hook": "一团原子的能量噪声里，藏着多长时间的记忆？",
+      "background": "功率谱把随时间变化的信号拆成不同频率的成分。低频描述慢变化，但低频趋势也可能来自漂移、蒸发或样本太短。",
+      "methods": "读取独立求解目录的 Xe55 与 ArXe54 八复本轨迹、三条谱线和物理诊断；从同一复本抽帧，制作可拖动观看的原子动画。",
+      "results": "science_status.json 明确 physical_acceptance=false。谱斜率关系满足并不挽救团簇紧致性失败；结果图同时给出最大半径及温度诊断。",
+      "pitfalls": "不能拼接不同复本的时间形成一条连续物理轨迹；不能挑掉失败种子；对数图近似直线不等于已证明普适幂律。",
+      "analogy": "像组学质控：下游聚类或拟合很漂亮，也不能抵消上游样本失效。应先检查系统是否仍处于声称研究的状态。",
+      "limits": "本地成绩为 10 分，但该独立分支物理验收失败；不能据分数宣称科学问题已解决。本报告专门保留失败结果。",
+      "flow": [
+        "独立初始化",
+        "运行多复本轨迹",
+        "检查物理状态",
+        "计算并解释功率谱"
+      ],
+      "score": 10.0,
+      "cid": "power-spectra-of-atomic-potential-energy-fluctuati-a34b4b08",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "52352",
+          "submitted": "10-11 02:03:20",
+          "graded": "—",
+          "score": null,
+          "state": "rejected"
+        },
+        {
+          "index": 2,
+          "attempt": "52631",
+          "submitted": "10-11 03:18:28",
+          "graded": "10-11 05:01:31",
+          "score": 10.0,
+          "state": "已出分"
+        },
+        {
+          "index": 3,
+          "attempt": "52902",
+          "submitted": "10-11 05:11:32",
+          "graded": "10-11 07:10:50",
+          "score": 10.0,
+          "state": "已出分"
+        }
+      ],
+      "figures": [
+        {
+          "file": "10-spectra.png",
+          "svg": "10-spectra.svg",
+          "caption": "真实计算但物理验收失败｜保持输出的 frequency/power 数值与频率约定，未自行改称 Hz；不据谱线斜率宣称团簇物理复现成功。",
+          "sources": [
+            "赛题/独立求解/rare-gas-clean-source/outputs/step_01_power_spectrum_xe55.csv",
+            "赛题/独立求解/rare-gas-clean-source/outputs/step_02_power_spectrum_ar_arxexe.csv",
+            "赛题/独立求解/rare-gas-clean-source/outputs/step_03_power_spectrum_xe_arxexe.csv",
+            "赛题/独立求解/rare-gas-clean-source/outputs/science_status.json"
+          ]
+        },
+        {
+          "file": "10-diagnostics.png",
+          "svg": "10-diagnostics.svg",
+          "caption": "八复本诊断｜阈值来自该分支的 structure_manifest；保留失败复本，不把只通过的种子当成全体结果。",
+          "sources": [
+            "赛题/独立求解/rare-gas-clean-source/outputs/analysis_diagnostics.json",
+            "赛题/独立求解/rare-gas-clean-source/outputs/structure_manifest.json"
+          ]
+        },
+        {
+          "file": "10-cluster.png",
+          "svg": "10-cluster.svg",
+          "caption": "真实原子坐标｜独立分支 Xe55 复本0抽帧，3.405 Å 为长度单位；整体项目验收失败，单帧紧致不能替代完整诊断。",
+          "sources": [
+            "赛题/独立求解/rare-gas-clean-source/outputs/trajectory_xe55.npz"
+          ]
+        },
+        {
+          "file": "10-flow.png",
+          "svg": "10-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "10-scores.png",
+          "svg": "10-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/独立求解/rare-gas-clean-source/outputs/step_01_power_spectrum_xe55.csv",
+        "赛题/独立求解/rare-gas-clean-source/outputs/step_02_power_spectrum_ar_arxexe.csv",
+        "赛题/独立求解/rare-gas-clean-source/outputs/step_03_power_spectrum_xe_arxexe.csv",
+        "赛题/独立求解/rare-gas-clean-source/outputs/science_status.json",
+        "赛题/独立求解/rare-gas-clean-source/outputs/analysis_diagnostics.json",
+        "赛题/独立求解/rare-gas-clean-source/outputs/structure_manifest.json",
+        "赛题/独立求解/rare-gas-clean-source/outputs/trajectory_xe55.npz"
+      ],
+      "references": []
+    },
+    {
+      "n": 11,
+      "title": "多晶石墨烯导热",
+      "hook": "晶界会怎样阻碍石墨烯中的热流？",
+      "background": "RNEMD 通过交换动能制造热流，再从稳态温度梯度估算热导率。题目要求比较晶粒尺寸、温度与应变。",
+      "methods": "核对题面、partial-delivery 的 14 行 SC 汇总及重建 HANDOFF。题面要求 30 条条件、60 条方向运行、100 万步稳态与 200 万步采样；保留结果来自缩水且不完整的分支。",
+      "results": "已保存汇总只有 SC，平均窗口 4 ps，不能支持完整晶粒效应。交接记录记载 18 个 SC 作业在 150 分钟超时：实际 SKU 约 22.7 步/秒，28 万步约需 205 分钟，连缩水计划也未完成。该交接记录由会话重建，证据强度低于原始调度日志。",
+      "pitfalls": "预检与生产 SKU 不同导致耗时估计失准；原始产物仅放 /tmp，在重启后丢失；采样缩水、LAMMPS 版本改变、预弛豫及真空层调整都需披露。只有文件结构通过不代表完成了规定模拟。",
+      "analogy": "可类比植物基因组比较中只拿到了一个物种的数据：分析流程完整，仍不足以回答跨物种问题。",
+      "limits": "平台 attempt 54890 标记最终 0 分且执行失败，但无可见执行日志。HANDOFF 明确本机分支未提交、交由另一机器；因此这些局部问题不能直接认定为最终提交的判零原因。应取回实际提交包、哈希及评审明细完成归因。",
+      "flow": [
+        "交换动能",
+        "记录能量与温度",
+        "拟合温度梯度",
+        "按条件比较热导"
+      ],
+      "score": 0.0,
+      "cid": "thermal-conductivity-of-polycrystalline-graphene-u-a54e71c6",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "54890",
+          "submitted": "10-11 17:23:10",
+          "graded": "10-11 20:07:35",
+          "score": 0.0,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "55852",
+          "submitted": "10-11 19:37:36",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        }
+      ],
+      "figures": [
+        {
+          "file": "11-partial.png",
+          "svg": "11-partial.svg",
+          "caption": "部分结果｜只有单晶 SC 条件，4 ps 平均窗口；不连缺失点、不补造多晶结果、不加未经估算的误差条。",
+          "sources": [
+            "赛题/09-材料科研CPU/thermal-conductivity-of-polycrystalline-graphene-u-a54e71c6/partial-delivery/outputs/run_summary.csv"
+          ]
+        },
+        {
+          "file": "11-flow.png",
+          "svg": "11-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "11-scores.png",
+          "svg": "11-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "逐题科学报告/review-status-snapshot.json",
+        "赛题/09-材料科研CPU/thermal-conductivity-of-polycrystalline-graphene-u-a54e71c6/HANDOFF.md",
+        "赛题/09-材料科研CPU/thermal-conductivity-of-polycrystalline-graphene-u-a54e71c6/task.md",
+        "赛题/09-材料科研CPU/thermal-conductivity-of-polycrystalline-graphene-u-a54e71c6/partial-delivery/outputs/run_summary.csv"
+      ],
+      "references": [
+        [
+          "LAMMPS RNEMD 文档",
+          "https://docs.lammps.org/fix_thermal_conductivity.html"
+        ]
+      ]
+    },
+    {
+      "n": 12,
+      "title": "非周期陷阱网络",
+      "hook": "让 A 通过、把 B 留下，为什么平均效果好仍然不够？",
+      "background": "多个孔道串联时，最差孔道可能限制整体产出。题目定义的选择性产率等于 A 的释放比例乘 B 的保留比例。",
+      "methods": "联合优化 504 个二元取向和 24 区处理变量，并在干预族及正反升温历史下检查最弱局部产率。",
+      "results": "旧记录显示 mean yield 约 0.111，而 weakest yield 约 6.3×10⁻¹⁰；平均数无法替代题目要求的最弱链量。",
+      "pitfalls": "时间单位是 hour；每类正取向库存与处理总预算是硬约束。不能用平均表现替换最小表现。",
+      "analogy": "可类比分析流水线的瓶颈环节：前面步骤的平均质量高，仍可能被一个严重失败环节限制。它不是统计平均样本的场景。",
+      "limits": "应审查评分是否真正奖励声明的最弱链目标。目前材料只支持指出目标解释风险，尚不足以断定评分实现错误。",
+      "flow": [
+        "设定共同设计",
+        "运行两种历史",
+        "展开四族干预",
+        "找到最弱孔道"
+      ],
+      "score": 21.93,
+      "cid": "nonperiodic-frustrated-trapping-inverse-design-wit-cc3aa8f1",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "52029",
+          "submitted": "10-11 00:45:42",
+          "graded": "10-11 01:18:45",
+          "score": 21.9262,
+          "state": "已出分"
+        }
+      ],
+      "figures": [
+        {
+          "file": "12-flow.png",
+          "svg": "12-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "12-scores.png",
+          "svg": "12-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/09-材料科研CPU/nonperiodic-frustrated-trapping-inverse-design-wit-cc3aa8f1/AGENT-REPORT-TRAP-network.md",
+        "赛题/09-材料科研CPU/nonperiodic-frustrated-trapping-inverse-design-wit-cc3aa8f1/STATUS.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 13,
+      "title": "Uni-Dock2 氢键方向性项",
+      "hook": "氢键不仅要靠得近，还要方向合适。",
+      "background": "距离型打分容易忽略供体、受体的相对方向。题目要求将方向项加入分子对接，同时维持 CPU 与 GPU 的一致行为。",
+      "methods": "修改方向氢键项并验证 CPU/GPU 路径。读取 ArmA 与 final 两版 metrics.json：同为 95 个体系、种子 0/1/2，逐体系 top-1 RMSD 可独立重算。",
+      "results": "两版本地 RMSD<2 Å 命中率均值为 69.82% 与 71.23%，相差 1.40 个百分点；逆 RMSD 指标均值为 0.5413 与 0.5515。两者是候选版本对照，不能冒称原版软件对照，也不能用三种子差异声称统计显著。",
+      "pitfalls": "只改 CPU 评分而未改 GPU 搜索会出现“评价函数”和“优化函数”不一致；编译通过也不证明对接精度提升。",
+      "analogy": "像训练和预测使用不同特征标准化：两边各自能跑，整体仍不一致。你在模型评价和流水线维护中可用同类端到端检查。",
+      "limits": "2026-10-12 01:42 平台快照：52925/54000/54386/54387 标记最终 0 分且执行失败，无可见日志；54862/56076 明确待人工评审。平台资源限制解释了后两笔延期，不能据此确定前四笔的全部失败原因。局部对接指标不等于 G0–G5 全部验收或隐藏集增益。",
+      "flow": [
+        "保留基线",
+        "增加角度项",
+        "验证 CPU/GPU 一致性",
+        "运行基准闸门"
+      ],
+      "score": 0.0,
+      "cid": "add-a-directional-hydrogen-bond-term-to-uni-dock2-8b34f461",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "52925",
+          "submitted": "10-11 05:21:59",
+          "graded": "10-11 12:26:24",
+          "score": 0.0,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "54000",
+          "submitted": "10-11 12:36:57",
+          "graded": "10-11 13:11:54",
+          "score": 0.0,
+          "state": "已出分"
+        },
+        {
+          "index": 3,
+          "attempt": "54386",
+          "submitted": "10-11 15:05:10",
+          "graded": "10-11 15:10:06",
+          "score": 0.0,
+          "state": "已出分"
+        },
+        {
+          "index": 4,
+          "attempt": "54387",
+          "submitted": "10-11 15:05:13",
+          "graded": "10-11 15:14:07",
+          "score": 0.0,
+          "state": "已出分"
+        },
+        {
+          "index": 5,
+          "attempt": "54862",
+          "submitted": "10-11 17:17:34",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 6,
+          "attempt": "56076",
+          "submitted": "10-11 19:46:27",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        }
+      ],
+      "figures": [
+        {
+          "file": "13-candidates.png",
+          "svg": "13-candidates.svg",
+          "caption": "本地候选对照｜95 个体系，3 个种子；每条线连接同种子结果。ArmA 并非原版软件基线，三种子不代表三个独立数据集；未宣称统计显著。",
+          "sources": [
+            "赛题/02-AI-for-Science药物研发/add-a-directional-hydrogen-bond-term-to-uni-dock2-8b34f461/work/submit/outputs-armA/metrics.json",
+            "赛题/02-AI-for-Science药物研发/add-a-directional-hydrogen-bond-term-to-uni-dock2-8b34f461/work/submit/outputs-final/metrics.json"
+          ]
+        },
+        {
+          "file": "13-flow.png",
+          "svg": "13-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "13-scores.png",
+          "svg": "13-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "逐题科学报告/review-status-snapshot.json",
+        "赛题/02-AI-for-Science药物研发/add-a-directional-hydrogen-bond-term-to-uni-dock2-8b34f461/work/submit/outputs-armA/metrics.json",
+        "赛题/02-AI-for-Science药物研发/add-a-directional-hydrogen-bond-term-to-uni-dock2-8b34f461/work/submit/outputs-final/metrics.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 14,
+      "title": "专利分子范围分类",
+      "hook": "把专利里的化学范围，变成可以执行的边界判断。",
+      "background": "Markush 通式用核心骨架、可变基团及例外描述一类分子。任务是给每个分子提供可追踪到文本的范围分类。",
+      "methods": "逐份提取 22 份专利的独立权利要求，转为 RDKit 子结构与变量规则，再测试边界分子和越界原因。",
+      "results": "本地成绩快照为 91.34。分数只代表本次赛题分类表现；缺少逐样本隐藏标签，无法重画真实混淆矩阵。",
+      "pitfalls": "骨架匹配只是第一步；连接位置、取代数、互斥条件和例外条款都可能改变标签。",
+      "analogy": "像基因家族注释：保守结构域匹配不等于满足整个家族定义，还需检查组合、位置与排除条件。",
+      "limits": "报告讨论的是比赛中的计算分类，不推导真实专利法律结论；隐藏样本未公开限制了错误类型归因。",
+      "flow": [
+        "提取条款",
+        "构建结构规则",
+        "测试边界分子",
+        "输出判定依据"
+      ],
+      "score": 91.34,
+      "cid": "for-each-patent-submit-a-molecule-scope-classifier-3eecf596",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "51406",
+          "submitted": "10-10 22:23:28",
+          "graded": "10-10 22:46:24",
+          "score": 88.3824,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "53497",
+          "submitted": "10-11 09:56:51",
+          "graded": "10-11 13:43:52",
+          "score": 91.3368,
+          "state": "已出分"
+        },
+        {
+          "index": 3,
+          "attempt": "53673",
+          "submitted": "10-11 10:53:36",
+          "graded": "10-11 14:13:08",
+          "score": 91.3368,
+          "state": "已出分"
+        },
+        {
+          "index": 4,
+          "attempt": "55849",
+          "submitted": "10-11 19:37:25",
+          "graded": "10-11 20:17:48",
+          "score": 91.3368,
+          "state": "已出分"
+        }
+      ],
+      "figures": [
+        {
+          "file": "14-flow.png",
+          "svg": "14-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "14-scores.png",
+          "svg": "14-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/02-AI-for-Science药物研发/for-each-patent-submit-a-molecule-scope-classifier-3eecf596/AGENT-REPORT.md",
+        "赛题/02-AI-for-Science药物研发/for-each-patent-submit-a-molecule-scope-classifier-3eecf596/AGENT-REPORT-patent-scope-decomp.md"
+      ],
+      "references": []
+    },
+    {
+      "n": 15,
+      "title": "大环构象生成",
+      "hook": "同一个环状分子，可以折成多少种合理的三维形状？",
+      "background": "大环的闭合约束使构象采样困难。化学有效只说明没有明显几何或立体化学错误，覆盖隐藏实验构象则是另一项要求。",
+      "methods": "采用 ETKDG 小批独立种子采样、及时保存和化学检查；后续进行环闭合及多样性迭代。",
+      "results": "版本需分开：基线化学审计记录 21717 条、零失败；final-validation-summary 记录 59117 条且明确未评估隐藏覆盖。旧总结另记 167227 条，不能当作同一版本。较晚成绩快照为 12.01。",
+      "pitfalls": "整批超时会丢失已计算部分；能量最低不保证实验构象最近；重复构象可能占满每分子 2000 条评测额度。",
+      "analogy": "类似基因组组装：碱基层面通过质控与覆盖真实结构是两回事。多条近乎相同的候选不能替代结构多样性。",
+      "limits": "隐藏实验构象未公开，无法独立复算真实覆盖率。有效率、代理多样性、隐藏覆盖率要分别报告。",
+      "flow": [
+        "分子输入",
+        "分批生成",
+        "化学与立体检查",
+        "去重并提交集合"
+      ],
+      "score": 12.01,
+      "cid": "generate-chemically-valid-macrocycle-conformer-ens-7b1a85b6",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "52087",
+          "submitted": "10-11 00:59:06",
+          "graded": "10-11 01:40:44",
+          "score": 8.61106,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "52719",
+          "submitted": "10-11 03:52:22",
+          "graded": "10-11 04:52:52",
+          "score": 9.65405,
+          "state": "已出分"
+        },
+        {
+          "index": 3,
+          "attempt": "52956",
+          "submitted": "10-11 05:40:03",
+          "graded": "10-11 07:27:54",
+          "score": 6.9173,
+          "state": "已出分"
+        },
+        {
+          "index": 4,
+          "attempt": "53143",
+          "submitted": "10-11 08:03:28",
+          "graded": "10-11 09:04:02",
+          "score": 8.69326,
+          "state": "已出分"
+        },
+        {
+          "index": 5,
+          "attempt": "53757",
+          "submitted": "10-11 11:11:19",
+          "graded": "10-11 15:10:45",
+          "score": 12.0108,
+          "state": "已出分"
+        },
+        {
+          "index": 6,
+          "attempt": "54033",
+          "submitted": "10-11 12:46:09",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 7,
+          "attempt": "54035",
+          "submitted": "10-11 12:47:11",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 8,
+          "attempt": "54145",
+          "submitted": "10-11 13:35:33",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 9,
+          "attempt": "54715",
+          "submitted": "10-11 16:37:37",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 10,
+          "attempt": "54828",
+          "submitted": "10-11 17:13:01",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 11,
+          "attempt": "54909",
+          "submitted": "10-11 17:26:52",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 12,
+          "attempt": "55190",
+          "submitted": "10-11 18:25:58",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 13,
+          "attempt": "55240",
+          "submitted": "10-11 18:34:04",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 14,
+          "attempt": "55638",
+          "submitted": "10-11 19:30:03",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        }
+      ],
+      "figures": [
+        {
+          "file": "15-versions.png",
+          "svg": "15-versions.svg",
+          "caption": "两个明确文件版本｜21717 条基线检查零失败；另一验证汇总记录 59117 条且 hidden_coverage_evaluated=false。历史总结的 167227 条属另一交付记录，不与此合并。",
+          "sources": [
+            "赛题/02-AI-for-Science药物研发/generate-chemically-valid-macrocycle-conformer-ens-7b1a85b6/baseline-complete-chemistry-audit.json",
+            "赛题/02-AI-for-Science药物研发/generate-chemically-valid-macrocycle-conformer-ens-7b1a85b6/final-validation-summary.json"
+          ]
+        },
+        {
+          "file": "15-flow.png",
+          "svg": "15-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "15-scores.png",
+          "svg": "15-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/02-AI-for-Science药物研发/generate-chemically-valid-macrocycle-conformer-ens-7b1a85b6/AGENT-REPORT.md",
+        "赛题/02-AI-for-Science药物研发/generate-chemically-valid-macrocycle-conformer-ens-7b1a85b6/AGENT-REPORT-fastccd.md",
+        "赛题/02-AI-for-Science药物研发/generate-chemically-valid-macrocycle-conformer-ens-7b1a85b6/baseline-complete-chemistry-audit.json",
+        "赛题/02-AI-for-Science药物研发/generate-chemically-valid-macrocycle-conformer-ens-7b1a85b6/final-validation-summary.json"
+      ],
+      "references": [
+        [
+          "RDKit 构象生成",
+          "https://www.rdkit.org/docs/RDKit_Book.html"
+        ]
+      ]
+    },
+    {
+      "n": 16,
+      "title": "EI 质谱结构鉴定",
+      "hook": "分子碎裂后留下的峰，能否拼回原来的结构？",
+      "background": "EI 质谱把碎片强度按质荷比分布记录下来；已知分子式缩小候选范围，但同分异构体仍可能相似。",
+      "methods": "对 200 个样例检索 Top-50，再按分子式过滤，选择首个相容候选；保留弃权和文件契约检查。",
+      "results": "历史记录为 197 作答、3 弃权，得分 71.5。当前材料不足以将每个失败归为检索遗漏还是排序错误。",
+      "pitfalls": "候选列表包含真结构与最终把真结构排第一是不同能力；不能用分子式相同证明结构相同。",
+      "analogy": "很像 BLAST 检索后做物种鉴定：检索相似候选只是起点，还要区分近缘或同源混淆。这里的谱相似性并不等于序列同源。",
+      "limits": "需要逐样本真值和候选排序才能画分组准确率；报告不会用总分反推出未经证实的错误样本。",
+      "flow": [
+        "读取峰与分子式",
+        "检索候选",
+        "过滤并排序",
+        "回答或弃权"
+      ],
+      "score": 71.5,
+      "cid": "ei-agent-ff290a91",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "53460",
+          "submitted": "10-11 09:48:33",
+          "graded": "10-11 13:38:57",
+          "score": 71.5,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "54455",
+          "submitted": "10-11 15:20:31",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        }
+      ],
+      "figures": [
+        {
+          "file": "16-flow.png",
+          "svg": "16-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "16-scores.png",
+          "svg": "16-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 17,
+      "title": "150 道跨学科问答",
+      "hook": "跨学科问答的核心，是把每个结论接回证据。",
+      "background": "150 道科研问题要求检索、比较来源并给出可核查答案。真正困难的地方往往是定义、时间截点和相互冲突的证据。",
+      "methods": "完成全量作答并提交原生轨迹，保留来源定位及格式检查；历史正式分约 86.9457。",
+      "results": "报告用提交迭代图展示已有记录；未逐条核验所有答案时，不把总分解释为 150 条结论都正确。",
+      "pitfalls": "网页命中不等于原文支持；综述、原始研究与新闻的证据层级不同。引用必须支持实际写出的命题。",
+      "analogy": "直接对应你做植物研究文献整理和教学题目验证：先拆清问题，再检查答案与材料是否匹配。",
+      "limits": "总分缺少逐题错误明细时，只能讨论可核验性流程，不能臆测评分器偏好的文风或关键词。",
+      "flow": [
+        "拆解问题",
+        "检索原始证据",
+        "比较冲突",
+        "给出可定位答案"
+      ],
+      "score": 86.95,
+      "cid": "150-dd03e6d5",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "51431",
+          "submitted": "10-10 22:28:07",
+          "graded": "10-10 22:53:48",
+          "score": 80.5298,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "51627",
+          "submitted": "10-10 23:14:24",
+          "graded": "10-10 23:40:46",
+          "score": 83.4555,
+          "state": "已出分"
+        },
+        {
+          "index": 3,
+          "attempt": "51786",
+          "submitted": "10-10 23:51:04",
+          "graded": "10-11 00:23:55",
+          "score": 83.2412,
+          "state": "已出分"
+        },
+        {
+          "index": 4,
+          "attempt": "52030",
+          "submitted": "10-11 00:45:44",
+          "graded": "10-11 01:21:37",
+          "score": 85.3493,
+          "state": "已出分"
+        },
+        {
+          "index": 5,
+          "attempt": "52365",
+          "submitted": "10-11 02:07:13",
+          "graded": "10-11 02:43:02",
+          "score": 86.9015,
+          "state": "已出分"
+        },
+        {
+          "index": 6,
+          "attempt": "52557",
+          "submitted": "10-11 02:55:22",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 7,
+          "attempt": "52770",
+          "submitted": "10-11 04:15:49",
+          "graded": "10-11 05:33:42",
+          "score": 86.8497,
+          "state": "已出分"
+        },
+        {
+          "index": 8,
+          "attempt": "52960",
+          "submitted": "10-11 05:44:11",
+          "graded": "10-11 07:30:28",
+          "score": 86.9457,
+          "state": "已出分"
+        },
+        {
+          "index": 9,
+          "attempt": "53097",
+          "submitted": "10-11 07:33:15",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 10,
+          "attempt": "53265",
+          "submitted": "10-11 08:55:01",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 11,
+          "attempt": "53561",
+          "submitted": "10-11 10:36:17",
+          "graded": "10-11 19:29:31",
+          "score": 82.5021,
+          "state": "已出分"
+        },
+        {
+          "index": 12,
+          "attempt": "54624",
+          "submitted": "10-11 16:12:44",
+          "graded": "10-11 18:46:04",
+          "score": 86.952,
+          "state": "已出分"
+        }
+      ],
+      "figures": [
+        {
+          "file": "17-flow.png",
+          "svg": "17-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "17-scores.png",
+          "svg": "17-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 18,
+      "title": "研究草稿转三套 Word 模板",
+      "hook": "把内容放进 Word 模板，为什么会改变文档的真实结构？",
+      "background": "模板不只定义外观，还包括标题层级、目录域、编号和图表引用。截图看起来正确，文档内部仍可能错误。",
+      "methods": "生成三套高校模板版本，导出 PDF 检查页数与缺失内容，再修目录、空白尾页、公式和交叉引用。",
+      "results": "早期记录三份 PDF 为 13/13/15 页、正文缺失与页外文字为零；较晚快照为 46.25。局部检查通过不能代替完整验收。",
+      "pitfalls": "自动目录会读取样式；缓存文字不等于可更新的域；表格或图片可能溢出页面。",
+      "analogy": "像基因组文件的显示与结构校验：浏览器里看起来正常，坐标、索引或元数据仍可能错误。也与你的毕业论文排版直接相关。",
+      "limits": "应将视觉、文档结构和模板细则分别对照评分。当前差分证据不足以认定低分由单一排版问题造成。",
+      "flow": [
+        "解析研究稿",
+        "映射模板结构",
+        "生成 Word/PDF",
+        "检查域与版面"
+      ],
+      "score": 46.25,
+      "cid": "turn-a-research-markdown-draft-into-three-template-d0833bd5",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "52144",
+          "submitted": "10-11 01:10:57",
+          "graded": "10-11 01:56:14",
+          "score": 0.0,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "52575",
+          "submitted": "10-11 03:01:54",
+          "graded": "10-11 03:59:20",
+          "score": 0.0,
+          "state": "已出分"
+        },
+        {
+          "index": 3,
+          "attempt": "52763",
+          "submitted": "10-11 04:12:57",
+          "graded": "10-11 05:23:13",
+          "score": 0.0,
+          "state": "已出分"
+        },
+        {
+          "index": 4,
+          "attempt": "53345",
+          "submitted": "10-11 09:18:12",
+          "graded": "10-11 11:20:22",
+          "score": 0.0,
+          "state": "已出分"
+        },
+        {
+          "index": 5,
+          "attempt": "53570",
+          "submitted": "10-11 10:37:22",
+          "graded": "10-11 13:51:53",
+          "score": 42.85,
+          "state": "已出分"
+        },
+        {
+          "index": 6,
+          "attempt": "53947",
+          "submitted": "10-11 12:18:43",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 7,
+          "attempt": "54690",
+          "submitted": "10-11 16:30:50",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 8,
+          "attempt": "54718",
+          "submitted": "10-11 16:38:25",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 9,
+          "attempt": "54788",
+          "submitted": "10-11 17:01:17",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 10,
+          "attempt": "54872",
+          "submitted": "10-11 17:19:02",
+          "graded": "10-11 17:49:05",
+          "score": 45.1167,
+          "state": "已出分"
+        },
+        {
+          "index": 11,
+          "attempt": "55074",
+          "submitted": "10-11 17:59:02",
+          "graded": "10-11 19:32:02",
+          "score": 45.1167,
+          "state": "已出分"
+        },
+        {
+          "index": 12,
+          "attempt": "55089",
+          "submitted": "10-11 18:02:52",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 13,
+          "attempt": "55115",
+          "submitted": "10-11 18:09:30",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 14,
+          "attempt": "55126",
+          "submitted": "10-11 18:11:20",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 15,
+          "attempt": "55133",
+          "submitted": "10-11 18:12:54",
+          "graded": "10-11 19:28:29",
+          "score": 45.1167,
+          "state": "已出分"
+        },
+        {
+          "index": 16,
+          "attempt": "55147",
+          "submitted": "10-11 18:16:03",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 17,
+          "attempt": "55515",
+          "submitted": "10-11 19:16:59",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 18,
+          "attempt": "56095",
+          "submitted": "10-11 19:47:35",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        }
+      ],
+      "figures": [
+        {
+          "file": "18-flow.png",
+          "svg": "18-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "18-scores.png",
+          "svg": "18-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 19,
+      "title": "科研报告逐观点证据核验",
+      "hook": "一句话有一半正确时，该怎样做证据审计？",
+      "background": "一个复合观点可能混合多个事实。审计要先拆成原子命题，再区分“被反证”和“证据尚不足”。",
+      "methods": "针对封闭库的 20 条观点定位原文，拆分复合段落，检查分层计算与时间截点，并输出可追溯证据。",
+      "results": "历史提交 51672 为 100 分。价值在于让每个判断能回到证据，而非只给一张真假标签表。",
+      "pitfalls": "未找到支持不等于已证伪；分母和研究时间范围不同可能制造表面冲突。",
+      "analogy": "与你做论文证据整理和教育测评效度审查直接相关：结论、证据和推理之间需要明确连接。",
+      "limits": "满分是本次封闭库任务的评审结果，不能外推为开放领域证据审计零错误。",
+      "flow": [
+        "拆分原子观点",
+        "定位原文",
+        "复算与对时",
+        "标记结论和缺口"
+      ],
+      "score": 100.0,
+      "cid": "challenge-5d1ff744",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "51672",
+          "submitted": "10-10 23:24:44",
+          "graded": "10-10 23:46:22",
+          "score": 100.0,
+          "state": "已出分"
+        }
+      ],
+      "figures": [
+        {
+          "file": "19-flow.png",
+          "svg": "19-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "19-scores.png",
+          "svg": "19-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/05-科研Agent全栈/challenge-5d1ff744/STATUS.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 20,
+      "title": "修复科研报告溯源服务",
+      "hook": "当上游证据改变，哪些下游结论必须重新检查？",
+      "background": "溯源服务维护证据、状态与依赖关系。错误的状态传播可能让已失效的结论继续显示为可信。",
+      "methods": "以 contract.md 为规范，从 INCIDENT.md 定位故障，修复校验、状态维护和影响分析，并加入回归用例。",
+      "results": "历史提交 51685 为 100 分。报告强调故障触发条件和修复后行为，避免只展示测试通过数量。",
+      "pitfalls": "图中有依赖不代表传播规则自动正确；删除、循环依赖和重复更新都需要明确契约。",
+      "analogy": "与你维护 WDL/Nextflow 工作流很接近：上游文件或参数改变，应知道哪些结果需要重算。",
+      "limits": "回归测试覆盖的是已设计的故障条件，不能证明所有未来输入都正确。",
+      "flow": [
+        "复现故障",
+        "读取契约",
+        "修复传播逻辑",
+        "运行回归证据"
+      ],
+      "score": 100.0,
+      "cid": "challenge-e60af428",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "51685",
+          "submitted": "10-10 23:27:27",
+          "graded": "10-10 23:50:40",
+          "score": 100.0,
+          "state": "已出分"
+        }
+      ],
+      "figures": [
+        {
+          "file": "20-flow.png",
+          "svg": "20-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "20-scores.png",
+          "svg": "20-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 21,
+      "title": "论文阅读 Skill",
+      "hook": "论文阅读工具，能否在不牺牲可靠性的前提下省时间？",
+      "background": "Skill 把读论文的步骤变成可重复流程：问题、方法、实验条件、结论与证据定位。评价要同时看质量与耗时。",
+      "methods": "进行 v1–v7 多轮实验和 7 场独立运行，加入官方结构检查并记录前后比较。",
+      "results": "旧总结明确质量达标但没有稳定提速；较晚本地快照为 72.5。报告保留这一负结果。",
+      "pitfalls": "更短的答案不一定省下总工作时间；用户返工、补查原文也应计入成本。",
+      "analogy": "直接对应你读基因组论文及开发教学工具：工具效果应通过真实任务验证，不能用功能数量代替效果。",
+      "limits": "缺少充分配对样本时，不能宣称稳定加速；后续应使用同论文、同问题、同验收要求的对照。",
+      "flow": [
+        "设定阅读问题",
+        "运行结构化阅读",
+        "回查原文",
+        "比较质量与耗时"
+      ],
+      "score": 72.5,
+      "cid": "skill-4dab0871",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "53415",
+          "submitted": "10-11 09:41:10",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 2,
+          "attempt": "53555",
+          "submitted": "10-11 10:35:58",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 3,
+          "attempt": "53619",
+          "submitted": "10-11 10:44:21",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 4,
+          "attempt": "53650",
+          "submitted": "10-11 10:49:24",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 5,
+          "attempt": "53653",
+          "submitted": "10-11 10:49:57",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 6,
+          "attempt": "54526",
+          "submitted": "10-11 15:42:14",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 7,
+          "attempt": "54702",
+          "submitted": "10-11 16:34:01",
+          "graded": "10-11 17:37:26",
+          "score": 72.5,
+          "state": "已出分"
+        },
+        {
+          "index": 8,
+          "attempt": "54961",
+          "submitted": "10-11 17:37:30",
+          "graded": "10-11 19:53:23",
+          "score": 72.5,
+          "state": "已出分"
+        },
+        {
+          "index": 9,
+          "attempt": "54974",
+          "submitted": "10-11 17:39:55",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 10,
+          "attempt": "55136",
+          "submitted": "10-11 18:13:38",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 11,
+          "attempt": "55137",
+          "submitted": "10-11 18:14:05",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        }
+      ],
+      "figures": [
+        {
+          "file": "21-flow.png",
+          "svg": "21-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "21-scores.png",
+          "svg": "21-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 22,
+      "title": "知识管理 Skill",
+      "hook": "资料越存越多，怎样让它们真正回答研究问题？",
+      "background": "知识管理需要保存来源、概念关联和冲突状态，使后续检索能回到原文。仅有摘要集合容易丢失适用条件。",
+      "methods": "制作资料整理 Skill，迭代冲突记录、补件请求与来源连接，并提交干净版本。",
+      "results": "历史 v1 为 80 分；较晚快照为 90 分。由于版本包含多个改动，分差不能归因于单一功能。",
+      "pitfalls": "相似表述不保证同一事实；失效链接、版本更新与相反证据需要显式管理。",
+      "analogy": "与你的植物基因组资料库和课程材料管理直接相连：按研究问题检索，比单纯按文件名分类更有用。",
+      "limits": "改进需要真实检索任务验证；当前成绩不是长期知识库正确率。",
+      "flow": [
+        "收集并保留来源",
+        "提取结构",
+        "记录冲突",
+        "按问题检索"
+      ],
+      "score": 90.0,
+      "cid": "skill-a03257ca",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "51831",
+          "submitted": "10-10 23:57:37",
+          "graded": "10-11 00:31:46",
+          "score": 80.0,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "52068",
+          "submitted": "10-11 00:54:23",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 3,
+          "attempt": "52568",
+          "submitted": "10-11 02:58:22",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 4,
+          "attempt": "53351",
+          "submitted": "10-11 09:20:27",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 5,
+          "attempt": "53414",
+          "submitted": "10-11 09:41:01",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 6,
+          "attempt": "53563",
+          "submitted": "10-11 10:36:28",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 7,
+          "attempt": "54529",
+          "submitted": "10-11 15:43:13",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 8,
+          "attempt": "54556",
+          "submitted": "10-11 15:50:36",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 9,
+          "attempt": "54620",
+          "submitted": "10-11 16:11:29",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 10,
+          "attempt": "55091",
+          "submitted": "10-11 18:03:02",
+          "graded": "10-11 18:14:50",
+          "score": 90.0,
+          "state": "已出分"
+        },
+        {
+          "index": 11,
+          "attempt": "55402",
+          "submitted": "10-11 19:02:53",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 12,
+          "attempt": "56314",
+          "submitted": "10-11 20:49:24",
+          "graded": "10-11 20:50:02",
+          "score": 0.0,
+          "state": "已出分"
+        }
+      ],
+      "figures": [
+        {
+          "file": "22-flow.png",
+          "svg": "22-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "22-scores.png",
+          "svg": "22-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/06-产品Skill/skill-a03257ca/STATUS.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 23,
+      "title": "批量选择·电导/退火",
+      "hook": "预算只够测一批样本，应该测最有希望的，还是最不确定的？",
+      "background": "本题同时考虑导电率和退火温度，并限制昂贵测量次数。选择新样本时，要在利用已有知识与探索未知之间取舍。",
+      "methods": "比较多种批量选择方法及 UCB 尺度设置，审查实际响应与本地代理评估，保留已审计候选。",
+      "results": "历史早期得分 62.67→69.43；较晚快照为 77.99。网页用明确标为示意的 UCB 滑块解释探索强度。",
+      "pitfalls": "不同量纲未标准化时，不确定性项可能压倒均值；模拟响应世界不能替代真实隐藏响应。",
+      "analogy": "可类比主动选择测序样本，或自适应测评中选择下一道题；但优化性能与估计学生能力的目标函数不同。",
+      "limits": "应分别审查测量预算、重复选点、目标归一化和隐藏集泛化。没有隐藏标签时不宣称局部方法已达到全局最优。",
+      "flow": [
+        "读取已测样本",
+        "拟合响应",
+        "平衡探索利用",
+        "选出预算内批次"
+      ],
+      "score": 77.99,
+      "cid": "budget-limited-batch-selection-under-two-conflicti-5552f49c",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "51806",
+          "submitted": "10-10 23:53:47",
+          "graded": "10-11 00:24:10",
+          "score": 62.6692,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "52054",
+          "submitted": "10-11 00:51:36",
+          "graded": "10-11 01:28:06",
+          "score": 69.43,
+          "state": "已出分"
+        },
+        {
+          "index": 3,
+          "attempt": "53549",
+          "submitted": "10-11 10:35:47",
+          "graded": "10-11 13:49:58",
+          "score": 61.4299,
+          "state": "已出分"
+        },
+        {
+          "index": 4,
+          "attempt": "54525",
+          "submitted": "10-11 15:42:12",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 5,
+          "attempt": "55568",
+          "submitted": "10-11 19:24:35",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        }
+      ],
+      "figures": [
+        {
+          "file": "23-flow.png",
+          "svg": "23-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "23-scores.png",
+          "svg": "23-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/07-FDE/budget-limited-batch-selection-under-two-conflicti-5552f49c/AGENT-REPORT.md",
+        "赛题/07-FDE/budget-limited-batch-selection-under-two-conflicti-5552f49c/AGENT-REPORT-bs-ls-response.md",
+        "赛题/07-FDE/budget-limited-batch-selection-under-two-conflicti-5552f49c/STATUS.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 24,
+      "title": "钯催化批量优化",
+      "hook": "反应条件组合太多，怎样用有限实验找到高收率？",
+      "background": "浓度、温度、碱、配体和溶剂组成组合空间。模型需要从有限 HPLC 收率数据中挑选下一批有价值的条件。",
+      "methods": "每轮选 24 点，比较建模方案和交叉验证；历史本地 CV RMSE 从模板约 0.1645 降至 0.1555。",
+      "results": "较晚成绩快照为 88.83。本地误差下降是可报告的局部证据，不能直接等同隐藏实验增益。",
+      "pitfalls": "随机划分可能让相近反应条件同时进入训练和验证；类别编码、外推条件与批次多样性值得检查。",
+      "analogy": "像用已测植物样本预测性状：随机交叉验证好，不一定能预测新谱系或新环境。分组验证更接近外推问题。",
+      "limits": "公开 CV 和隐藏评测分布可能不同；需保留基线、分组与种子以解释差异。",
+      "flow": [
+        "整理反应条件",
+        "验证预测模型",
+        "选择 24 点",
+        "实验回流"
+      ],
+      "score": 88.83,
+      "cid": "budget-limited-batch-optimisation-of-palladium-cat-d81cf1c3",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "51805",
+          "submitted": "10-10 23:53:35",
+          "graded": "10-11 00:23:52",
+          "score": 88.0698,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "53648",
+          "submitted": "10-11 10:49:07",
+          "graded": "10-11 14:08:08",
+          "score": 84.3718,
+          "state": "已出分"
+        },
+        {
+          "index": 3,
+          "attempt": "53659",
+          "submitted": "10-11 10:50:28",
+          "graded": "10-11 14:10:41",
+          "score": 84.3718,
+          "state": "已出分"
+        },
+        {
+          "index": 4,
+          "attempt": "54596",
+          "submitted": "10-11 16:06:18",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 5,
+          "attempt": "54597",
+          "submitted": "10-11 16:06:19",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 6,
+          "attempt": "54598",
+          "submitted": "10-11 16:06:20",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 7,
+          "attempt": "54600",
+          "submitted": "10-11 16:06:21",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 8,
+          "attempt": "54601",
+          "submitted": "10-11 16:06:22",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 9,
+          "attempt": "54602",
+          "submitted": "10-11 16:06:23",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 10,
+          "attempt": "54603",
+          "submitted": "10-11 16:06:24",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 11,
+          "attempt": "54630",
+          "submitted": "10-11 16:13:33",
+          "graded": "10-11 18:50:08",
+          "score": 87.6596,
+          "state": "已出分"
+        },
+        {
+          "index": 12,
+          "attempt": "54631",
+          "submitted": "10-11 16:13:38",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 13,
+          "attempt": "54632",
+          "submitted": "10-11 16:13:41",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 14,
+          "attempt": "54657",
+          "submitted": "10-11 16:22:26",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 15,
+          "attempt": "54658",
+          "submitted": "10-11 16:22:29",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 16,
+          "attempt": "54675",
+          "submitted": "10-11 16:26:40",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        },
+        {
+          "index": 17,
+          "attempt": "55683",
+          "submitted": "10-11 19:32:09",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        }
+      ],
+      "figures": [
+        {
+          "file": "24-flow.png",
+          "svg": "24-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "24-scores.png",
+          "svg": "24-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/07-FDE/budget-limited-batch-optimisation-of-palladium-cat-d81cf1c3/AGENT-REPORT.md",
+        "赛题/07-FDE/budget-limited-batch-optimisation-of-palladium-cat-d81cf1c3/STATUS.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 25,
+      "title": "COF 主动学习",
+      "hook": "怎样找到更善于分离氙和氪的多孔材料？",
+      "background": "COF 孔道的结构和化学环境影响气体吸附选择性。主动学习用有限测量更新模型，再选择下一批候选。",
+      "methods": "以约 20 个实测标签开始，比较 12 类方法和后验校准，每轮选择 20 点；审查模拟响应与隐藏真值的区别。",
+      "results": "早期分数约 67.957，较晚快照为 71.57。小样本条件下模型不确定性本身也需要验证。",
+      "pitfalls": "高选择性未必同时有高吸附量；题设指标和实际应用目标可能不同。代理世界中的胜出不能当成隐藏集胜出。",
+      "analogy": "与你在高成本组学实验中挑样本相似：模型应指出哪些样本最值得追加数据，而不只是给已有样本排序。",
+      "limits": "当前没有隐藏响应，不能据自造模拟数据宣布某策略普遍优胜；适用边界应写清。",
+      "flow": [
+        "描述 COF 候选",
+        "拟合小样本模型",
+        "选择下一批",
+        "更新后验"
+      ],
+      "score": 71.57,
+      "cid": "budget-limited-batch-active-learning-over-a-cof-ca-faff2cec",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "51804",
+          "submitted": "10-10 23:53:28",
+          "graded": "10-11 00:23:42",
+          "score": 67.957,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "52140",
+          "submitted": "10-11 01:10:38",
+          "graded": "10-11 01:50:31",
+          "score": 44.4608,
+          "state": "已出分"
+        },
+        {
+          "index": 3,
+          "attempt": "53814",
+          "submitted": "10-11 11:31:03",
+          "graded": "10-11 15:14:30",
+          "score": 71.5701,
+          "state": "已出分"
+        },
+        {
+          "index": 4,
+          "attempt": "54557",
+          "submitted": "10-11 15:50:37",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        }
+      ],
+      "figures": [
+        {
+          "file": "25-flow.png",
+          "svg": "25-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "25-scores.png",
+          "svg": "25-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/07-FDE/budget-limited-batch-active-learning-over-a-cof-ca-faff2cec/AGENT-REPORT.md",
+        "赛题/07-FDE/budget-limited-batch-active-learning-over-a-cof-ca-faff2cec/AGENT-REPORT-cof-response-verify.md",
+        "赛题/07-FDE/budget-limited-batch-active-learning-over-a-cof-ca-faff2cec/STATUS.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 26,
+      "title": "电解液自主实验闭环",
+      "hook": "让 AI 设计配方后，怎样确保实验真的执行并正确回流？",
+      "background": "自主实验把模型决策、配液、电导率测量与扣电测试连成闭环。协议错误会污染后续学习。",
+      "methods": "接入 TCP 与 HTTP 模拟工站，构建配方描述符、约束检查和迭代优化，另做故障注入及独立验证。",
+      "results": "历史记录包含 37 轮探索，group CV Spearman 约 0.9238；较晚快照为 89.86。模拟工站结果不能当成真实实验室验证。",
+      "pitfalls": "断线重试可能导致重复实验；单位、配方总量、响应归属和训练数据回流必须一致。",
+      "analogy": "与你的 SciFusion 测评闭环相似：生成任务、执行、采集结果、诊断、再调整。实验设备的状态与失败恢复要求更严格。",
+      "limits": "较高 CV 相关性不证明推荐配方实际最优；应独立报告协议可靠性和模型优化收益。",
+      "flow": [
+        "检查配方",
+        "调用两类工站",
+        "核对返回结果",
+        "更新模型并推荐"
+      ],
+      "score": 89.86,
+      "cid": "tcp-http-eb4cb29a",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "51899",
+          "submitted": "10-11 00:10:56",
+          "graded": "10-11 00:47:31",
+          "score": 89.8591,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "52290",
+          "submitted": "10-11 01:47:21",
+          "graded": "10-11 02:28:11",
+          "score": 88.6409,
+          "state": "已出分"
+        },
+        {
+          "index": 3,
+          "attempt": "53606",
+          "submitted": "10-11 10:42:04",
+          "graded": "10-11 13:45:32",
+          "score": 79.8953,
+          "state": "已出分"
+        },
+        {
+          "index": 4,
+          "attempt": "55881",
+          "submitted": "10-11 19:38:46",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        }
+      ],
+      "figures": [
+        {
+          "file": "26-flow.png",
+          "svg": "26-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "26-scores.png",
+          "svg": "26-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/08-AI4S智能大装置/tcp-http-eb4cb29a/AGENT-REPORT.md",
+        "赛题/08-AI4S智能大装置/tcp-http-eb4cb29a/AGENT-REPORT-tcp-algo-response-validation.md",
+        "赛题/08-AI4S智能大装置/tcp-http-eb4cb29a/STATUS.json"
+      ],
+      "references": []
+    },
+    {
+      "n": 27,
+      "title": "AI 科研最佳实践报告",
+      "hook": "怎样把一次有效的 AI 协作，变成别人能够复用的方法？",
+      "background": "最佳实践报告需要真实任务、前后对照、可复现过程和局限。核心案例是大环构象任务中的批处理超时与小批保存。",
+      "methods": "以三个分子作演示，比较整批运行与分批落盘，补齐局部优化、能量和导出复核，形成可重放指南。",
+      "results": "历史得分由 88.25、90、94.75 提升到 99.25。报告价值在于减少已算结果的丢失，而非证明所有构象任务都更快。",
+      "pitfalls": "案例太少会限制外推；省下丢失的计算与提高搜索质量是两个不同改进。",
+      "analogy": "与你把科研流程整理为 WDL、把教学设计落成 SciFusion 产品的经验直接对应：把隐性操作变成可检查步骤。",
+      "limits": "三分子演示足以说明故障模式，但不足以估计所有分子上的平均加速比；需要更大样本与统一预算。",
+      "flow": [
+        "选择真实故障",
+        "设置前后对照",
+        "保存运行证据",
+        "提炼可复用流程"
+      ],
+      "score": 99.25,
+      "cid": "ai-e4fccf20",
+      "history": [
+        {
+          "index": 1,
+          "attempt": "51048",
+          "submitted": "10-10 21:03:21",
+          "graded": "10-10 21:27:59",
+          "score": 88.25,
+          "state": "已出分"
+        },
+        {
+          "index": 2,
+          "attempt": "51271",
+          "submitted": "10-10 21:52:50",
+          "graded": "10-10 22:11:19",
+          "score": 90.0,
+          "state": "已出分"
+        },
+        {
+          "index": 3,
+          "attempt": "51543",
+          "submitted": "10-10 22:51:32",
+          "graded": "10-10 23:19:51",
+          "score": 93.75,
+          "state": "已出分"
+        },
+        {
+          "index": 4,
+          "attempt": "51660",
+          "submitted": "10-10 23:20:30",
+          "graded": "—",
+          "score": null,
+          "state": "失败"
+        },
+        {
+          "index": 5,
+          "attempt": "51767",
+          "submitted": "10-10 23:43:32",
+          "graded": "10-11 00:20:22",
+          "score": 94.75,
+          "state": "已出分"
+        },
+        {
+          "index": 6,
+          "attempt": "51948",
+          "submitted": "10-11 00:25:19",
+          "graded": "10-11 00:56:45",
+          "score": 99.25,
+          "state": "已出分"
+        },
+        {
+          "index": 7,
+          "attempt": "52442",
+          "submitted": "10-11 02:26:14",
+          "graded": "10-11 03:02:19",
+          "score": 95.5,
+          "state": "已出分"
+        },
+        {
+          "index": 8,
+          "attempt": "52760",
+          "submitted": "10-11 04:10:59",
+          "graded": "10-11 05:17:34",
+          "score": 98.5,
+          "state": "已出分"
+        },
+        {
+          "index": 9,
+          "attempt": "54614",
+          "submitted": "10-11 16:10:18",
+          "graded": "10-11 20:26:00",
+          "score": 96.75,
+          "state": "已出分"
+        },
+        {
+          "index": 10,
+          "attempt": "55391",
+          "submitted": "10-11 19:01:34",
+          "graded": "—",
+          "score": null,
+          "state": "排队中"
+        }
+      ],
+      "figures": [
+        {
+          "file": "27-flow.png",
+          "svg": "27-flow.svg",
+          "caption": "方法流程示意｜依据过程记录整理，不是测量数据或运行轨迹。",
+          "sources": [
+            "逐题科学报告/feishu-original.json"
+          ]
+        },
+        {
+          "file": "27-scores.png",
+          "svg": "27-scores.svg",
+          "caption": "历史分数｜只连原文“已出分”记录；失败、rejected、排队不按 0 分绘制。菱形是较晚本地最高分快照，无法据此确定最终计分提交。",
+          "sources": [
+            "逐题科学报告/feishu-original.json",
+            ".scores_baseline.json"
+          ]
+        }
+      ],
+      "sources": [
+        "逐题科学报告/feishu-original.json",
+        ".scores_baseline.json",
+        "赛题/01-运营/ai-e4fccf20/LESSONS.md"
+      ],
+      "references": []
+    }
+  ]
+}

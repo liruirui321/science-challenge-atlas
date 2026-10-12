@@ -1,0 +1,246 @@
+{
+  "赛题/00-共同必做题/ai4s-deepmd-dpa4-2fde8de2/work-v2/outputs/md-dt1.json": {
+    "sha256": "59c7ba44c0153f14dc49fde02b6b511470b9b1291a5f827f63fecdbc20ba8e20",
+    "bytes": 875065
+  },
+  "赛题/00-共同必做题/ai4s-deepmd-dpa4-2fde8de2/work-v2/outputs/md-dt2.json": {
+    "sha256": "961bcd149ccc5f92d54d422f12f00f3039f564e806dee2079c666e7ffcc1cb40",
+    "bytes": 441779
+  },
+  "codex-deepseek-review/itc-D3-ols-audit.json": {
+    "sha256": "3e1aaabd737481f25c6de406be3427e927ba2f9e8fe35e99e2af2384beaba284",
+    "bytes": 3372
+  },
+  "赛题/09-材料科研CPU/robust-inverse-design-of-a-frustrated-plasticity-s-322265bf/outputs/observables.json": {
+    "sha256": "3d2103cb94744ebc5cfca224c32eed58cc1d51ef6c31a0eb4e0e6b82b8858551",
+    "bytes": 442
+  },
+  "赛题/独立求解/orr-clean-source/outputs/facet_summary.csv": {
+    "sha256": "8d44f9ff6099c3a4cf6fe850cf6af89cb2277b84a825b29377c9175c76127e81",
+    "bytes": 4112
+  },
+  "赛题/09-材料科研CPU/joint-defect-domain-protocol-inverse-design-on-an-4bd8d4ce/evidence/agent-run-20261011T021159Z/round16-evaluation.json": {
+    "sha256": "76f41f8b3a28d46a4a4db70992293b19770a5d8a1d7223dff24b2c50c9e392a4",
+    "bytes": 10697
+  },
+  "赛题/10-新增材料CPU/non-abelian-mechanics-in-a-critical-kagome-elastic-b5018746/final-outputs/band_structures.csv": {
+    "sha256": "22b5089a6ef497910ce285e585b6862d5c7da1998b4c7484b10855ef918b7733",
+    "bytes": 66884
+  },
+  "赛题/10-新增材料CPU/non-abelian-mechanics-in-a-critical-kagome-elastic-b5018746/final-outputs/method.json": {
+    "sha256": "c878a956168fcb92873e632e453d75a1f191072259dc1249104a659ee0e9666c",
+    "bytes": 3348
+  },
+  "赛题/10-新增材料CPU/non-abelian-mechanics-in-a-critical-kagome-elastic-b5018746/final-outputs/nonabelian_holonomy.csv": {
+    "sha256": "bd45a7c93be3a931ce5d058637e0ad971ea1d97488e9e354b857dafc220fd747",
+    "bytes": 4932
+  },
+  "赛题/独立求解/rare-gas-clean-source/outputs/step_01_power_spectrum_xe55.csv": {
+    "sha256": "51f35b8a1208c4c7a02dac56748c0c2f9bbec2dcbf53f814a612e9b898ab6283",
+    "bytes": 3062
+  },
+  "赛题/独立求解/rare-gas-clean-source/outputs/step_02_power_spectrum_ar_arxexe.csv": {
+    "sha256": "6c4e11bc8a64d729ce11137f4725c12fd05508d26c803067149f883ee90ed189",
+    "bytes": 3076
+  },
+  "赛题/独立求解/rare-gas-clean-source/outputs/step_03_power_spectrum_xe_arxexe.csv": {
+    "sha256": "855de0ad8595a6ff1c494a789249fbe3df5d2afe368e1e4b365f3169c5be38ad",
+    "bytes": 3065
+  },
+  "赛题/独立求解/rare-gas-clean-source/outputs/science_status.json": {
+    "sha256": "270d5aeebdcfe523bc87718628dd49034f98c505d988a6b069d7ca4ed099e6c0",
+    "bytes": 486
+  },
+  "赛题/独立求解/rare-gas-clean-source/outputs/analysis_diagnostics.json": {
+    "sha256": "98ef410e8f53aa17b6b8c4c2bf9ead9d414d6fd03e66e9270cd981c46225afd9",
+    "bytes": 21496
+  },
+  "赛题/独立求解/rare-gas-clean-source/outputs/structure_manifest.json": {
+    "sha256": "02ff07d38e3bf9af5728883eb9960a7fadab8244773799453e8459016578f10c",
+    "bytes": 5448
+  },
+  "赛题/独立求解/rare-gas-clean-source/outputs/trajectory_xe55.npz": {
+    "sha256": "74711d2863c7b3a67c7684056594b6d6d3813b4e8aed23babaeecd20e5c533a8",
+    "bytes": 532805726
+  },
+  "赛题/09-材料科研CPU/thermal-conductivity-of-polycrystalline-graphene-u-a54e71c6/partial-delivery/outputs/run_summary.csv": {
+    "sha256": "bd0fcd61765599f892afb75546ca81d8261c6602c182c9c121f66326596be796",
+    "bytes": 3192
+  },
+  "赛题/02-AI-for-Science药物研发/generate-chemically-valid-macrocycle-conformer-ens-7b1a85b6/baseline-complete-chemistry-audit.json": {
+    "sha256": "6a804c0a20e68cc1c6499e03d4205e70111d43b1a0ce9bed0cb6911bbe7f26c0",
+    "bytes": 170177
+  },
+  "赛题/02-AI-for-Science药物研发/generate-chemically-valid-macrocycle-conformer-ens-7b1a85b6/final-validation-summary.json": {
+    "sha256": "7fedb481967128cd9ac11a9586f09ba7c229c35c245366f6bff724c64254ac95",
+    "bytes": 171
+  },
+  "codex-deepseek-review/itc-itc-final3-arm-READY-ols-audit.json": {
+    "sha256": "89e4dba7ad3e038ec3ec34117486df69b27de21546e272ce59611276ba27b706",
+    "bytes": 3082
+  },
+  "赛题/02-AI-for-Science药物研发/add-a-directional-hydrogen-bond-term-to-uni-dock2-8b34f461/work/submit/outputs-armA/metrics.json": {
+    "sha256": "a6da0870e0037ee1dc22a9a717a7d19f32016c79109ed0befcb62a82f98e3c8c",
+    "bytes": 8767
+  },
+  "赛题/02-AI-for-Science药物研发/add-a-directional-hydrogen-bond-term-to-uni-dock2-8b34f461/work/submit/outputs-final/metrics.json": {
+    "sha256": "f8fa478b3a78c742afc2682ac1ff7f3566bd0f99d6bb696a69a2841548d7baa1",
+    "bytes": 8790
+  },
+  "逐题科学报告/feishu-original.json": {
+    "sha256": "8eb26a63cbf26773612ec25805a61abbc18ca386160368b5ed9763bb4c615779",
+    "bytes": 120890
+  },
+  "追光者全赛总结.md": {
+    "sha256": "b4b7cd2d385281cecd1e592a78f058203bebc9ad0f1f63f20d04fae0c327267e",
+    "bytes": 68315
+  },
+  ".scores_baseline.json": {
+    "sha256": "11c1b45ed3d41932aef8fecd3e6b59bbc55c56b483019caf5c6e9273d52934d1",
+    "bytes": 7001
+  },
+  "逐题科学报告/review-status-snapshot.json": {
+    "sha256": "a32b156d4e481cbe51ca1a88377b22346ca1e6392f5e34fdc0a7fed6c58d8563",
+    "bytes": 32888
+  },
+  "codex-deepseek-review/itc-final2-granularity-audit.json": {
+    "sha256": "8469612cde418107e8cab443b4956c2086a313bf3a0f83fa189528c76487f0e6",
+    "bytes": 1420
+  },
+  "codex-deepseek-review/itc-final3-force-audit.json": {
+    "sha256": "537a6575aa170a092aea14f767586350aa9fcb7e8cbef2eff16dc3d2beaa0865",
+    "bytes": 431
+  },
+  "赛题/09-材料科研CPU/robust-inverse-design-of-a-frustrated-plasticity-s-322265bf/STATUS.json": {
+    "sha256": "9351e8cc755e0d5687377ac296955b7ead6584fdb6fa90d5a38ec831e3b3ebc3",
+    "bytes": 2117
+  },
+  "赛题/10-新增材料CPU/defect-topology-stability-and-orr-activity-of-pt-a-fcde8365/STATUS.json": {
+    "sha256": "83fb7f5ef056c80a28a29e92725add3e3da669421807bdc3b29977e35abe65b5",
+    "bytes": 782
+  },
+  "赛题/09-材料科研CPU/joint-defect-domain-protocol-inverse-design-on-an-4bd8d4ce/AGENT-REPORT.md": {
+    "sha256": "92ba365016b47513bbf586f91cbeaa3a0c129eb931f155beb1dbdfd10037efb8",
+    "bytes": 27977
+  },
+  "赛题/09-材料科研CPU/joint-defect-domain-protocol-inverse-design-on-an-4bd8d4ce/AGENT-REPORT-dsh-verify.md": {
+    "sha256": "7df85bc636e9d0ebc5a18b2a2afe4ce32ed46df2064f6228dbe2e28946e2866e",
+    "bytes": 17013
+  },
+  "赛题/09-材料科研CPU/joint-defect-domain-protocol-inverse-design-on-an-4bd8d4ce/STATUS.json": {
+    "sha256": "e51d26fb9a6dd611b5c64587342de7f771c7eba63852e27b5458e5a36ff9a187",
+    "bytes": 1557
+  },
+  "赛题/09-材料科研CPU/robust-ordering-and-processing-of-a-coupled-phonon-3a39a214/AGENT-REPORT.md": {
+    "sha256": "25adc198eefc60c14f9b3102601446135c190650f6dff69385a2ec55bf2f8e64",
+    "bytes": 18002
+  },
+  "赛题/09-材料科研CPU/robust-ordering-and-processing-of-a-coupled-phonon-3a39a214/STATUS.json": {
+    "sha256": "864f28f79cf0182e738c26da81e3c61a795075e393306f2950c21da35106036a",
+    "bytes": 2710
+  },
+  "codex-deepseek-review/phonon-W0-independent-certificate.json": {
+    "sha256": "45e81f1f54941ef39ce5bf3ac104176fd617279d3b1371e2c4b452038357c78e",
+    "bytes": 1311
+  },
+  "赛题/10-新增材料CPU/non-abelian-mechanics-in-a-critical-kagome-elastic-b5018746/AGENT-REPORT-KAGOME-kagome.md": {
+    "sha256": "10a6ac4ad7c7dc8fe0c89a14e498314a31d0c674730abc151a877709cf6c5482",
+    "bytes": 18074
+  },
+  "赛题/10-新增材料CPU/non-abelian-mechanics-in-a-critical-kagome-elastic-b5018746/STATUS.json": {
+    "sha256": "c4d01880de311cc8dba12f43002849d057443080eac8fc859adf00ac6945c2f0",
+    "bytes": 414
+  },
+  "赛题/10-新增材料CPU/equilibrium-shape-and-surface-diffusion-of-sic-nan-98b26af7/AGENT-REPORT-sic-recompute.md": {
+    "sha256": "4561c70436529e83399b44ed2b450d59436abb8c328673f2407537f274b75300",
+    "bytes": 18204
+  },
+  "赛题/09-材料科研CPU/thermal-conductivity-of-polycrystalline-graphene-u-a54e71c6/HANDOFF.md": {
+    "sha256": "4e91c37c1a41269a805a2062bf2aa6be77ed4668b3b47d2c508f99c02ee8546d",
+    "bytes": 14107
+  },
+  "赛题/09-材料科研CPU/thermal-conductivity-of-polycrystalline-graphene-u-a54e71c6/task.md": {
+    "sha256": "e382d4d4509daed0215780ee84661068369f5dc0865180f0206a45c3308c7c63",
+    "bytes": 9315
+  },
+  "赛题/09-材料科研CPU/nonperiodic-frustrated-trapping-inverse-design-wit-cc3aa8f1/AGENT-REPORT-TRAP-network.md": {
+    "sha256": "6a0e28d4b1788406df93ec23ca129b849e553b909cb6883325df18cb88c584f8",
+    "bytes": 18942
+  },
+  "赛题/09-材料科研CPU/nonperiodic-frustrated-trapping-inverse-design-wit-cc3aa8f1/STATUS.json": {
+    "sha256": "7cf623682a7fbcb03c880b3a460f467a6167dd45b67302132ec850a6686c2a6b",
+    "bytes": 4796
+  },
+  "赛题/02-AI-for-Science药物研发/for-each-patent-submit-a-molecule-scope-classifier-3eecf596/AGENT-REPORT.md": {
+    "sha256": "cc90c70fd67fbfb817439bc4e6d74a19f2b775bba34d21c447d0b960b3f752a7",
+    "bytes": 13711
+  },
+  "赛题/02-AI-for-Science药物研发/for-each-patent-submit-a-molecule-scope-classifier-3eecf596/AGENT-REPORT-patent-scope-decomp.md": {
+    "sha256": "d1e867217a56c0c5f41807036377f83a4293bf9c7fa5d0806a333b280e18b358",
+    "bytes": 19891
+  },
+  "赛题/02-AI-for-Science药物研发/generate-chemically-valid-macrocycle-conformer-ens-7b1a85b6/AGENT-REPORT.md": {
+    "sha256": "ab01924561cb6f22bc8cb57310cb73c794112ba88235e37125255ce8b06fa7e5",
+    "bytes": 18965
+  },
+  "赛题/02-AI-for-Science药物研发/generate-chemically-valid-macrocycle-conformer-ens-7b1a85b6/AGENT-REPORT-fastccd.md": {
+    "sha256": "cecdd31d96f3d6d9e038c2e38bf82600938cb26e8d5cfbeb6c2071836baddaaa",
+    "bytes": 26586
+  },
+  "赛题/05-科研Agent全栈/challenge-5d1ff744/STATUS.json": {
+    "sha256": "37bf21fd84d138a84b10046417844d79e44faae3cb57740318b98ec690a314b1",
+    "bytes": 577
+  },
+  "赛题/06-产品Skill/skill-a03257ca/STATUS.json": {
+    "sha256": "18e57337da475068fabb2cfc7e399bb5673ded4b4f470cac1742e3e75628ce1f",
+    "bytes": 2742
+  },
+  "赛题/07-FDE/budget-limited-batch-selection-under-two-conflicti-5552f49c/AGENT-REPORT.md": {
+    "sha256": "555ae7166329033235de4831f260aec0296a39ce90e01c8c6de17b167be33e1d",
+    "bytes": 17317
+  },
+  "赛题/07-FDE/budget-limited-batch-selection-under-two-conflicti-5552f49c/AGENT-REPORT-bs-ls-response.md": {
+    "sha256": "211c6d3a6004f69f48491ff3d4cd52a847f09c67d131e7a84d273ba13eb62ba4",
+    "bytes": 35379
+  },
+  "赛题/07-FDE/budget-limited-batch-selection-under-two-conflicti-5552f49c/STATUS.json": {
+    "sha256": "f34fd3ffe5e06bbef34bc28b9428efc15bfedf60e24b310722619ed61fd839c5",
+    "bytes": 1130
+  },
+  "赛题/07-FDE/budget-limited-batch-optimisation-of-palladium-cat-d81cf1c3/AGENT-REPORT.md": {
+    "sha256": "79b33c6e87cea6a16c922e45af7a48b4a58d1bc1d0c1190b166c0562f0e1ea81",
+    "bytes": 31205
+  },
+  "赛题/07-FDE/budget-limited-batch-optimisation-of-palladium-cat-d81cf1c3/STATUS.json": {
+    "sha256": "d4a5b0d683778a8558a2903090968d0882d88a4759cdca1efafbf9df6ce216ff",
+    "bytes": 967
+  },
+  "赛题/07-FDE/budget-limited-batch-active-learning-over-a-cof-ca-faff2cec/AGENT-REPORT.md": {
+    "sha256": "acd10a258fdb838c5f3d4bb04fa81ba0c09ecac75f0a4c4c0dee4398639ea772",
+    "bytes": 15294
+  },
+  "赛题/07-FDE/budget-limited-batch-active-learning-over-a-cof-ca-faff2cec/AGENT-REPORT-cof-response-verify.md": {
+    "sha256": "6c860c72f7ef30791d5705174ba45a0b5367ba5a971f38d9d4919087b2425fce",
+    "bytes": 28875
+  },
+  "赛题/07-FDE/budget-limited-batch-active-learning-over-a-cof-ca-faff2cec/STATUS.json": {
+    "sha256": "fc1bb70d826eb3d77d510c3496f96e4750d9b5848258d62aa9858ea63840fa65",
+    "bytes": 549
+  },
+  "赛题/08-AI4S智能大装置/tcp-http-eb4cb29a/AGENT-REPORT.md": {
+    "sha256": "b0c0c371c74767dae4934c2b151848f642abd03a9cd52539e359fd9ce185cf39",
+    "bytes": 10450
+  },
+  "赛题/08-AI4S智能大装置/tcp-http-eb4cb29a/AGENT-REPORT-tcp-algo-response-validation.md": {
+    "sha256": "cdf4b8ff2f32b4fde9677a0048ad2c091b8a6f81b78c0d85cea4852fbc9e4858",
+    "bytes": 24997
+  },
+  "赛题/08-AI4S智能大装置/tcp-http-eb4cb29a/STATUS.json": {
+    "sha256": "ce9b91d9e19d27ead306f9f90170a61ed2a277eb9cd2a33b056b3e7acdd6fb49",
+    "bytes": 4604
+  },
+  "赛题/01-运营/ai-e4fccf20/LESSONS.md": {
+    "sha256": "ff4123482a8beeccb0c29f17ccc3c4878de99d50c48e1e2a32ebdd89ba55e835",
+    "bytes": 9039
+  }
+}
